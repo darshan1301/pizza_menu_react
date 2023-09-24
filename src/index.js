@@ -55,10 +55,12 @@ function Footer() {
 function Pizza({ pizzaName, ingredients, price, photoName }) {
   return (
     <div className="pizza">
-      <img src={photoName} alt="pizza spinachi" />
+      <img src={photoName} alt={pizzaName} />
+    <div>
       <h3>{pizzaName}</h3>
       <p>{ingredients}</p>
       <span>${Number(price) + 2}</span>
+    </div>
     </div>
   );
 }
